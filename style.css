@@ -5,7 +5,16 @@
     font-family: "Amatic SC", sans-serif;
 }
 
-.nav{
+
+.open{
+    width: 100%;
+    height: 90vh;
+    background-image: url(images/pizza.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(70%);
+}
+ .open .nav{
     width: 100%;
     height: 35px;
     background-color: rgba(0, 0, 0, 0.51);
@@ -13,56 +22,52 @@
     align-items: center;
     justify-content: start;
 }
-.nav:hover{
+.open .nav:hover{
     background-color: black;
 }
-.nav a{
+.open .nav a{
     display: flex;
     align-items: center;
     text-decoration: none;
     color: white;
     font-size: 18px;
     margin-left: 15px;
-    
+    position: relative;
     height: 35px;
     padding: 0 8px;
 }
-.nav a:hover{
+.open .nav a:hover{
     background-color: rgb(165, 161, 161);
 }
 
-.hero{
-    background-image: url(images/pizza.jpg);
-    width: 100%;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    z-index: -1;
+.open .hero{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
+    height: 90vh;
 }
-.hero h6{
+
+.open .hero h6{
     font-size: 70px;
     font-weight: 500;
     color: white;
 }
-.hero button{
+.open .hero button{
     border: none;
     background-color: black;
     color: white;
-    padding: 3px 17px;
+    padding: 8px 17px;
     font-size: 25px;
     margin-top: 25px;
+    cursor: pointer;
 }
-.hero button:hover{
+.open .hero button:hover{
     background-color: rgb(165, 161, 161);
 }
 
-.a1 p{
+.open p{
     color: white;
     position: absolute;
     bottom: 20px;
@@ -70,4 +75,275 @@
     font-size: 16px;
     padding: 4px 8px;
     background-color: black;
+}
+.menu{
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 150px 100px;
+}
+.menu h4{
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 50px;
+}
+
+
+.menu .item{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.menu .item .b1{
+    width: 100%;
+    border: 1px solid white;
+}
+.menu .item .b1 h5{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding: 5px 0;
+    font-weight: lighter;
+}
+.menu .item .b1:hover{
+    background-color: #f44336;
+}
+
+
+.menu .info{
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+}
+
+.menu .info .price{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding:  20px 20px;
+}
+
+.menu .info .price p{
+    font-size: 30px;
+    font-weight: bold;
+}
+.menu .info .price button{
+    padding: 2px 8px;
+    font-size: 25px;
+    border: none;
+    background-color: rgb(91, 91, 91);
+    border-radius: 3px;
+    color: white;
+}
+.menu .info #aa{
+    margin-left: 20px;
+    font-size: 25px;
+    padding-bottom: 25px;
+}
+
+
+.about{
+    background-color: #716665;
+    width: 100%;
+    padding: 50px 150px 30px;
+}
+
+.about h4{
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 50px;
+    font-weight: 500;
+}
+.about p{
+    font-size: 17px;
+    color: white;
+}
+.about .catgariy{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0;
+}
+.about .catgariy .text{
+    width: 100%;
+}
+.about .text p{
+    padding: 10px 0;
+    font-size: 20px;
+}
+.about .catgariy .img{
+    width: 100%;
+    text-align: right;
+}
+.about .img img{
+    width: 33%;
+    border-radius: 50%;
+}
+
+.about .img-1{
+    width: 100%;
+}
+
+.about .img-1 img{
+    width: 100%;
+}
+
+
+.about .time{
+    width: 100%;
+}
+.about .time h6{
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+.about .time .day{
+    display: flex;
+    width: 100%;
+}
+
+.about .time .day .day-1{
+    width: 50%;
+}
+.about .time .day .day-1 p{
+    font-size: 18px;
+    margin: 20px 0;
+}
+.about .time .day .day-2{
+    width: 50%;
+}
+
+.about .time .day .day-2 p{
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+
+.map{
+    width: 100%;
+    height: 100vh;
+}
+
+.map img{
+    width: 100%;
+    height: 100vh;
+    filter: grayscale(75%);
+}
+
+.contact {
+    background-color: #6c7a81;
+    width: 100%;
+    padding: 50px 150px 30px;
+}
+.contact h4{
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.contact p{
+    color: white;
+    padding-bottom: 20px;
+}
+
+.contact h6{
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+}
+form{
+    width: 100%;
+}
+form input{
+    width: 100%;
+    padding: 8px;
+    font-size: 20px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+}
+
+form .btn:hover{
+    background-color: #a59796f1;
+    cursor: pointer;
+}
+
+.footer{
+    width: 100%;
+    background-color: black;
+    height: 150px;display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer p{
+    font-size: 25px;
+    color: white;
+}
+.footer p a{
+    color: white;
+}
+.footer p a:hover{
+    color: #f44336;
+}
+
+@media screen and (max-width : 850px) {
+    .menu{
+        padding: 30px 100px 100px;
+    }
+    .about{
+        padding: 30px 100px 100px;
+    }
+    .contact{
+        padding: 30px 100px 100px;
+    }
+}
+
+
+@media screen and (max-width : 600px) {
+    .menu{
+        padding: 30px 70px 100px;
+    }
+    .about{
+        padding: 30px 70px 100px;
+    }
+    .contact{
+        padding: 30px 70px 100px;
+    }
+}
+
+
+@media screen and (max-width : 450px) {
+    .menu{
+        padding: 30px 40px 100px;
+    }
+    .about{
+        padding: 30px 40px 100px;
+    }
+    .contact{
+        padding: 30px 40px 100px;
+    }
+}
+
+
+@media screen and (max-width : 350px) {
+    .menu{
+        padding: 30px 10px 100px;
+    }
+    .about{
+        padding: 30px 10px 100px;
+    }
+    .contact{
+        padding: 30px 10px 100px;
+    }
 }
